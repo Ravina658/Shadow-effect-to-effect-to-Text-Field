@@ -1,0 +1,24 @@
+class signInVC: UIViewController {
+
+// Create outlet of UIView of Email Field 
+ @IBOutlet weak var shadowEmailSignup: UIView!
+
+
+
+ override func viewDidLoad() {
+  super.viewDidLoad()
+        
+  //coding for email uiview in signIn Screen
+  shadowEmailSignup.layer.cornerRadius =  shadowEmailSignup.frame.size.width/12
+  shadowEmailSignup.layer.shadowColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0).cgColor
+  shadowEmailSignup.layer.shadowRadius = 6
+  shadowEmailSignup.layer.shadowOpacity = 0.1
+          
+ // Here I use colorLiteral for the shadow color colorLiteral means you can give color by using its colorcode
+  shadowEmailSignup.layer.shadowColor = #colorLiteral(red: 0.6117647059, green: 0.2549019608, blue: 1, alpha: 1)
+  shadowEmailSignup.layer.masksToBounds = false
+  shadowEmailSignup.layer.shadowOffset = CGSize(width: 6.0 , height: 6.0)
+  shadowEmailSignup.layer.shadowOpacity = 0.1
+  shadowEmailSignup.layer.shadowRadius = 6
+     }
+  }
